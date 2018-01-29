@@ -1,7 +1,7 @@
 
 const observer = lozad('.lazy', {
-    rootMargin: '10px 0px',
-    threshold: 0.1,
+    rootMargin: '200px 50px',
+    threshold: 0.5,
     load: function(el) {
         el.src = el.getAttribute('data-src');
 
