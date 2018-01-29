@@ -4,7 +4,10 @@ const observer = lozad('.lazy', {
     threshold: 0.1,
     load: function(el) {
         el.src = el.getAttribute('data-src');
-        el.classList.add('loaded')
+
+        $(el).on('load', function() {
+            this.classList.add('loaded');
+        });
     }
 });
 
