@@ -1,14 +1,12 @@
-@import url('reset.css');
 @import url('https://fonts.googleapis.com/css?family=Damion|Germania+One|Hammersmith+One');
 
+/* HEADER */
+
 header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 	text-align: center;
 	width: 100%;
 
+    margin: 0 auto;
     margin-left: -50px;
 
     padding: 20px;
@@ -85,7 +83,7 @@ a#cv {
 
 a#cv:hover { opacity: 0.6; }
 
-img {
+header img {
     max-width: 100%;
     width: 400px;
     height: auto;
@@ -122,3 +120,34 @@ img {
     }
 }
 
+/* MAIN */
+
+.section img {
+    position: absolute; 
+
+    transform:scale(0.5);
+    -moz-transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+
+	transform-origin: top left;
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+}
+
+main {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.section {
+    width: 1100px;
+	display: block;
+	position: relative;
+	left: 50%;
+	
+    transform:translateX(-50%);
+    -moz-transform:translate(-50%);
+    -webkit-transform:translateX(-50%);
+	
+}

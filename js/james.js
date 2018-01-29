@@ -4,6 +4,8 @@ const observer = lozad('.lazy', {
     threshold: 0.1
 });
 
+observer.observe();
+
 $(document).ready(function() {
 	var $title = $('h1');
     var $links = $('button');	
