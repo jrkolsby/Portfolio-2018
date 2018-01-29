@@ -134,6 +134,18 @@ header img {
 	-webkit-transform-origin: top left;
 }
 
+img.lazy { 
+    opacity: 0;
+
+    transition: 0.2s opacity ease-in-out;
+    -moz-transition: 0.2s opacity ease-in-out;
+    -webkit-transition: 0.2s opacity ease-in-out;
+}
+
+img.lazy.loaded {
+    opacity: 1;
+}
+
 main {
 	width: 100%;
 	text-align: center;

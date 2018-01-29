@@ -1,7 +1,11 @@
 
 const observer = lozad('.lazy', {
     rootMargin: '10px 0px',
-    threshold: 0.1
+    threshold: 0.1,
+    load: function(el) {
+        el.src = el.getAttribute('data-src');
+        el.classList.add('loaded')
+    }
 });
 
 observer.observe();
