@@ -2,7 +2,7 @@
 
 /* HEADER */
 
-html {
+body, html {
     overflow-x: hidden;
 }
 
@@ -124,9 +124,11 @@ header img {
 
 
 main { 
-    overflow: show;
-	width: 100%;
+    overflow-x: show;
 	text-align: center;
+
+    /* Forces the body to resize to scale transformed child, sorry */
+    margin-bottom: -1000000px;
 
 	transform-origin: top center;
 	-moz-transform-origin: top center;
